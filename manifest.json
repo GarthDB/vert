@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Vertical Dribbble",
+  "description": "Rotates dribbble posts with the vertical tag.",
+  "version": "1.0",
+
+  "permissions": [
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://dribbble.com/shots/*"],
+      "css": ["vert.css"],
+      "js": ["sizzle.js","vert.js"],
+      "run_at": "document_end"
+    }
+  ]
+}

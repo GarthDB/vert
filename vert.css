@@ -1,0 +1,33 @@
+.single-img {
+  transition: transform 0.5s, height 0.5s, width 0.5s;
+}
+.single {
+  transition: width 0.5s;
+}
+.single-grid {
+  transition: height 0.5s, width 0.5s;
+}
+.vert .single-img {
+  transform: rotate(90deg) translate(0,-100%);
+  transform-origin: 0 0;
+  height: 300px;
+  width: 400px;
+}
+.vert .single {
+  width: 300px !important;
+}
+.vert .single-grid {
+  width: 300px !important;
+  height: 400px !important;
+}
+.vert.full-800 .single-img {
+  height: 600px;
+  width: 800px;
+}
+.vert.full-800 .single {
+  width: 600px !important;
+}
+.vert.full-800 .single-grid {
+  width: 600px !important;
+  height: 800px !important;
+}
